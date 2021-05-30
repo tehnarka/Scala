@@ -6,11 +6,11 @@ object CommutativeSemigroupSpecification extends Properties("CommutativeSemigrou
   property("assoc") = forAll
   {
     (x: Duration, y: Duration, z: Duration) =>
-        (x ++ y) ++ z == x ++ (y ++ z)
+        (x/3 ++ y/3) ++ z/3 == x/3 ++ (y/3 ++ z/3)
   }
   property("commut") = forAll
   {
     (x: Duration, y: Duration) =>
-      x ++ y == y ++ x
+      x/2 ++ y/2 == y/2 ++ x/2
   }
 }
