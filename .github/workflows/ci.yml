@@ -13,5 +13,4 @@ jobs:
         with:
           java-version: "adopt@1.8"
       name: Build and Test
-        working-directory: scala
         run: sbt -v -Dfile.encoding=UTF-8 +test
