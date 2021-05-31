@@ -13,6 +13,6 @@ object CommutativeSemigroupSpecification extends Properties("CommutativeSemigrou
   property("commut") = forAll
   {
     (x: Duration, y: Duration) =>
-      x/2 ++ y/2 == y/2 ++ x/2
+      x/3 ++ y/3 == y/3 ++ x/3
   }
 }
