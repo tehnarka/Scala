@@ -19,12 +19,9 @@ class CommutativeSemigroupOps[A: CommutativeSemigroup](x: A)(implicit foo: Commu
   def ++(y: A): A = foo.addition(x, y)
 }
 
-object Time{
-  def main(args: Array[String]): Unit =
-{
+object CommutativeSemigroupOps{
     implicit def fun[A](x: A)(implicit foo: CommutativeSemigroup[A]): CommutativeSemigroupOps[A] = 
     {
       new CommutativeSemigroupOps[A](x)
     }
-  }
 }
