@@ -1,6 +1,7 @@
 import org.scalacheck.Prop.forAll
 import org.scalacheck.{Arbitrary, Gen, Prop}
 import org.scalacheck.Properties
+import scala.concurrent.duration._
 import CommutativeSemigroupOps._
   
 object CommutativeSemigroupSpecification extends Properties("CommutativeSemigroup") {
